@@ -24,5 +24,23 @@ namespace EvidenceProgress
         {
             InitializeComponent();
         }
+
+        private void buttonDel_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void buttonEdit_Click(object sender, RoutedEventArgs e)
+        {
+            /*user = MyListView.SelectedItems[0];
+            FirstNameTB.Text = user.FirstName;
+            LastNameTB.Text = user.LastName;
+            RCTB.Text = user.RC;
+            GenderTB.Text = user.Gender;
+            Detail customization = new Detail(user);
+            customization.Show();
+            this.Close();*/
+        }
+
+
     }
 }

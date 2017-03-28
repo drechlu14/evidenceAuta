@@ -5,10 +5,27 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:EvidenceProgress"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Car evidence" Height="350" Width="525">
     <Grid>
-        
-        
-        
+
+        <Label Content="Car list" FontSize="18" />
+        <ListView x:Name="MyListView" Margin="0,192,0,0" >
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <WrapPanel>
+                        <TextBlock Text="Car" />
+                        <TextBlock Text="" FontWeight="Bold" />
+                        <TextBlock Text=", Type" />
+                        <TextBlock Text="Age: " />
+                        <TextBlock Text="" FontWeight="Bold" />
+                        <TextBlock Text=" Owner" />
+                        <Button x:Name="buttonDel" Click="buttonDel_Click" Content="Delete" Height="20" Width="50" />
+                        <Button x:Name="buttonEdit" Click="buttonEdit_Click" Content="Edit" Height="20" Width="50" />
+                    </WrapPanel>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+
     </Grid>
 </Window>
